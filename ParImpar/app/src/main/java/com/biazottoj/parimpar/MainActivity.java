@@ -22,6 +22,12 @@ public class MainActivity extends AppCompatActivity {
         this.t = findViewById(R.id.resultado);
     }
 
+    public Integer getRandomNumber(Integer min, Integer max) {
+        Double n =  ((Math.random() * (max - min)) + min);
+
+        return n.intValue();
+    }
+
     public void alteraTexto(View v){
 
         Integer n = Integer.parseInt(this.num.getText().toString());
