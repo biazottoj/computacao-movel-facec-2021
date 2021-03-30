@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="java_texto_tamanho">40sp</dimen>
+    <dimen name="imagem_tamanho">50dp</dimen>
 </resources>

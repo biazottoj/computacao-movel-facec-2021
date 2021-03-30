@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="java_texto_tamanho">60sp</dimen>
+    <dimen name="imagem_tamanho">100dp</dimen>
+</resources>
