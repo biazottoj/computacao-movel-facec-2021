@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:useDefaultMargins="true"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/pesoEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:digits="0123456789"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3" />
+
+    <TextView
+        android:id="@+id/pesoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/peso_background"
+        android:elevation="@dimen/text_view_elevation"
+        android:hint="@string/peso"
+        android:padding="@dimen/text_view_padding"
+        android:textSize="@dimen/text_view_size" />
+
+    <TextView
+        android:id="@+id/alturaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/altura"
+        android:textSize="@dimen/text_view_size" />
+
+    <SeekBar
+        android:id="@+id/alturaSeekBar"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:max="210"
+        android:padding="@dimen/text_view_padding"
+        android:progress="100" />
+
+    <TextView
+        android:id="@+id/imcLabeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/imc"
+        android:textSize="@dimen/text_view_size" />
+
+    <TextView
+        android:id="@+id/imcTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/resultado_background"
+        android:elevation="@dimen/text_view_elevation"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/text_view_padding"
+        android:textSize="@dimen/text_view_size" />
+
+    <TextView
+        android:id="@+id/faixaLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/faixa"
+        android:textSize="@dimen/text_view_size" />
+
+    <TextView
+        android:id="@+id/faixaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/resultado_background"
+        android:elevation="@dimen/text_view_elevation"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/text_view_padding"
+        android:textSize="@dimen/text_view_size" />
+</GridLayout>
